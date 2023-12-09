@@ -1,1 +1,21 @@
-v3 hit done
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Last Update Time and Date</title>
+    <script>
+        // Function to display the last modified date and time
+        function displayLastModified() {
+            var lastModified = document.lastModified;
+            var displayElement = document.getElementById('lastModified');
+            var message = "Last updated: " + lastModified + " - v2 controller";
+            displayElement.textContent = message;
+        }
+    </script>
+</head>
+<body onload="displayLastModified()">
+    <h1>Webpage Last Update Time and Date</h1>
+    <p id="lastModified"></p>
+</body>
+</html>
+
